@@ -1,37 +1,65 @@
-## Welcome to GitHub Pages
+## Detecting Bad Smells with Machine Learning Algorithms: an Empirical Study ##
+### Complementary Webpage ###
 
-You can use the [editor on GitHub](https://github.com/anonymous-software-engineering/BadSmellsDetection/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Dataset Download
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Class Level**
+- [God Class](https://drive.google.com/open?id=1VRkqyqjKG98COWuhaed-_40vkBDKD8y0)
+- [Refused Parent Bequest]
 
-### Markdown
+**Method Level**
+- [Long Method]
+- [Feature Envy]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### List of Systems
+- apache-commons-lang
+- apache-commons-codec
+- apache-commons-io
+- apache-commons-logging
+- apache-lucene
+- checkstyle
+- hadoop
+- hibernate
+- htmlunit
+- jasperreports
+- jfreechart
+- jhotdraw
+- jmeter
+- quartz
+- spring-framework
+- squirrelsql
+- struts
+- tapestry
+- tomcat
+- weka
 
-```markdown
-Syntax highlighted code block
+### Manual Validation Questions
+*The answer after the question defines which answer indicates the presence of Bad Smell.*
 
-# Header 1
-## Header 2
-### Header 3
+**God Class**
+- Does the class have more than one responsibility? *Yes*
+- Does the class have functionality that would fit better into other classes? *Yes*
+- Would splitting up the class improve the overall design? *Yes*
 
-- Bulleted
-- List
+*Reference: Building Empirical Support for Automated Code Smell Detection. Jan Schumacher et al.*
 
-1. Numbered
-2. List
+**Refused Parent Bequest**
+- Does the class use only a little of parent's behaviour? *Yes*
+- Does the parent class provide more than a few protected members? *Yes*
+- Does the class is too small/simple? *No*
 
-**Bold** and _Italic_ and `Code` text
+*Reference: Object-Oriented Metrics in practice. Michele Lanza, Radu Marinescu. (Book)*
 
-[Link](url) and ![Image](src)
-```
+**Long Method**
+- Does the method have many conditional branches? *Yes*
+- Does the method is excessively large? *Yes*
+- Does the method use many variables? *Yes*
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+*Reference: Object-Oriented Metrics in practice. Michele Lanza, Radu Marinescu. (Book)*
 
-### Jekyll Themes
+**Feature Envy**
+- Does the method use directly more than a few attributes of other classes? *Yes*
+- Does the method use far more attributes from other classes than its own? *Yes*
+- Do the used "foreign" attributes belong to very few other classes? *Yes*
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/anonymous-software-engineering/BadSmellsDetection/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+*Reference: Object-Oriented Metrics in practice. Michele Lanza, Radu Marinescu. (Book)*
