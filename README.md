@@ -5,11 +5,11 @@
 
 **Class Level**
 - [God Class](https://drive.google.com/open?id=1VRkqyqjKG98COWuhaed-_40vkBDKD8y0)
-- [Refused Parent Bequest]
+- [Refused Parent Bequest](https://drive.google.com/open?id=1m4wEa5WuzeG1t7LV0u8qxtRKRwS7ivKc)
 
 **Method Level**
-- [Long Method]
-- [Feature Envy]
+- [Long Method](https://drive.google.com/open?id=1izd9i_D0KHO-PNvQJ6k17Qc-jMufgJra)
+- [Feature Envy](https://drive.google.com/open?id=18Xu1UNyrwkH4C6fqQ8iOap_2gPQgZyp1)
 
 ### List of Systems
 - apache-commons-lang
